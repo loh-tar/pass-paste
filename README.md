@@ -41,10 +41,6 @@ a shell is invoked. Depending on your configuration, this may happen automatical
 to add an entry to your *bashrc*
 - Ensure the *Requirements* are available on your system
 
-### ArchLinux
-
-You will find pass-paste in AUR
-
 ## License
 
     pass-paste: an extension for pass: the standard unix password manager
