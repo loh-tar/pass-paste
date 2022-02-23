@@ -58,7 +58,7 @@ declare -r windowProperty=$(xprop -id "${windowId_id}" |grep _NET_WM_WINDOW_TYPE
 printf "OK\n"
 
 # Bring the window to front, not needed to work, but isn't that expected?
-xdotool windowactivate --sync "${windowId_id}"
+xdotool windowactivate --sync "${windowId_id}" 2>/dev/null
 
 # printf will always be the bash build in. So when we pipe the secret to xdotool
 # the secret will not be revealed in "ps aux". But we illustrate that explicit by
