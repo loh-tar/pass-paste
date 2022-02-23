@@ -20,7 +20,7 @@
 
 set -e # exit script on any error
 
-declare -r myVersion="version 0.8 - feb 2022"
+declare -r myVersion="version 0.8.1 - feb 2022"
 declare -r path="$1"
 declare -r passFile="${PREFIX}/${path}.gpg"
 

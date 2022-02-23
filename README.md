@@ -1,8 +1,9 @@
-## pass-paste: an extension for pass: the standard unix password manager
+## pass-paste: an extension for pass - paste passwords by mouse without clipboard
 
-This extension could best be described as a better version of the `pass -c` option/command.
+This extension to [pass: the standard unix password manager](https://www.passwordstore.org)
+could best be described as a better version of the `pass -c` option/command.
 
-Where as `pass -c` uses the clipboard, does this extension use `xdotool` and `xwininfo`.
+Whereas `pass -c` uses the clipboard, does this extension use `xdotool`, `xprop` and `xwininfo`.
 
 The benefits are:
 
@@ -12,7 +13,7 @@ The benefits are:
 - No unneeded exposure of secrets to each application or listeners, like KDE-Connect
 
 To be honest, this solution doesn't work as best as it could. Best would be to *"paste"* by
-middle mouse button, just as usual. But `xwininfo`, which is used to select the target window,
+middle mouse button, just as usual. But `xprop`, which is used to select the target window,
 doesn't have an option `-button` like `xkill`. This limitation is more bothersome than expected.
 
 ## Usage
@@ -82,7 +83,11 @@ has to be done
 
 ## Release History
 
-### Very first version was 0.8 - Feb, 2022
+### Patch version v0.8.1, Feb 2022
+
+  - a58cb89 - Suppress rare error message when bring window to front
+
+### Very first version was v0.8, Feb 2022
 
   - Hello World!
   - We start with 0.8 because it's feature complete, except the flaws noted at TODO/BUGS.
