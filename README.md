@@ -32,6 +32,10 @@ click the wrong window. Consequently you can't use some task bar to switch to to
 
 ## Installation
 
+### ArchLinux
+
+You can find pass-paste in [AUR](https://aur.archlinux.org/packages/pass-paste)
+
 ### Manually
 
 - Get and extract the source
